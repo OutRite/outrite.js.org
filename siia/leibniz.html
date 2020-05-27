@@ -1,9 +1,15 @@
 <head>
 <title>OutRite - Leibniz</title>
 <script src="leibniz.js"></script>
+<script>
+	function writeToPage(msg) {
+		document.body.innerHTML = msg
+	}
+</script>
 </head>
 <body>
 <h1> Leibniz Pi Finder </h1>
-<button onclick="writePi(document.write)">Write Pi to page</button>
-<button onclick="writePi(console.log)">Write Pi to console</button>
+<button onclick="writePi(writeToPage)">Write Pi to page</button>
+<!--<button onclick="writePi(console.log)">Write Pi to console (very laggy)</button>-->
+<a href="explain.html">Why does it work?</a>
 </body>
